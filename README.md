@@ -1,68 +1,123 @@
-# CodeIgniter 4 Application Starter
+🔐 Sistema de Administração de Chaves — CodeIgniter 4 + Docker
 
-## What is CodeIgniter?
+Aplicação web desenvolvida em CodeIgniter 4 com ambiente totalmente containerizado utilizando Docker Compose, criada para auxiliar no controle e administração de chaves de portas dentro de empresas, condomínios ou instituições.
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+O sistema permite registrar usuários, empregados e chaves, além de acompanhar a movimentação das chaves através de relatórios completos.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+🚀 Funcionalidades
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+✅ Cadastro de usuários do sistema
+✅ Cadastro de empregados
+✅ Cadastro de chaves
+✅ Controle de retirada e devolução de chaves
+✅ Registro de qual usuário retirou determinada chave
+✅ Histórico de qual chave foi retirada por qual usuário
+✅ Relatórios gerenciais:
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+Relatório de chaves
 
-## Installation & updates
+Relatório de empregados
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+Histórico de movimentação de chaves
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+🧱 Tecnologias Utilizadas
 
-## Setup
+PHP 8+
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+CodeIgniter 4
 
-## Important Change with index.php
+MySQL / MariaDB
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+Docker
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+Docker Compose
 
-**Please** read the user guide for a better explanation of how CI4 works!
+Apache/Nginx (container web)
 
-## Repository Management
+🐳 Ambiente Docker
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+A aplicação roda completamente via containers.
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+Portas utilizadas
+Serviço	Porta Host	Descrição
+Aplicação Web	3000	Acesso ao sistema
+Banco de Dados	3305	MySQL/MariaDB
+⚙️ Instalação
+1️⃣ Clonar o repositório
+git clone https://github.com/leonardomarcatti/keyper.git
+cd seu-repositorio
+2️⃣ Subir os containers
 
-## Server Requirements
+Execute na raiz do projeto:
 
-PHP version 8.1 or higher is required, with the following extensions installed:
+docker compose up -d --build
+3️⃣ Acessar a aplicação
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+Abra no navegador:
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+http://ip:3000
+🗄️ Banco de Dados
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+O banco estará disponível em:
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+Host: localhost
+Porta: 3305
+
+As credenciais podem ser consultadas no arquivo:
+
+docker-compose.yml
+📊 Funcionamento do Sistema
+
+O fluxo principal da aplicação funciona da seguinte forma:
+
+Usuários são cadastrados no sistema.
+
+Empregados são registrados.
+
+As chaves são cadastradas e vinculadas às portas.
+
+Um usuário registra a retirada de uma chave.
+
+O sistema mantém o histórico completo da movimentação.
+
+Relatórios permitem auditoria e controle administrativo.
+
+📁 Estrutura do Projeto
+/
+├── app/
+├── public/
+├── writable/
+├── docker/
+├── docker-compose.yml
+└── README.md
+🧪 Comandos Úteis
+Parar containers
+docker compose down
+Ver logs
+docker compose logs -f
+Acessar container da aplicação
+docker compose exec app bash
+🔒 Objetivo do Projeto
+
+Este sistema foi desenvolvido para melhorar o controle físico de acessos, evitando perda de chaves, falta de rastreabilidade e dificuldades na identificação de responsáveis.
+
+📌 Melhorias Futuras
+
+Controle de permissões por nível de usuário
+
+Dashboard com indicadores
+
+Notificações de atraso na devolução
+
+API REST pública
+
+Auditoria avançada
+
+👨‍💻 Autor
+
+Projeto desenvolvido para fins de organização administrativa e estudo prático utilizando CodeIgniter 4 e Docker.
+
+📄 Licença
+
+Este projeto está sob licença MIT.
+Sinta-se livre para usar e modificar.
