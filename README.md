@@ -11,9 +11,9 @@
 ✅ Histórico de qual chave foi retirada por qual usuário</br>
 ✅ Relatórios gerenciais:</br>
 <ol>
-   <li>Relatório de chaves</li>
-   <li>Relatório de empregados</li>
-   <li>Histórico de movimentação de chaves</li>
+   <li>⭐ Relatório de chaves</li>
+   <li>⭐Relatório de empregados</li>
+   <li>⭐Histórico de movimentação de chaves</li>
 </ol>
 
 <h2>🧱 Tecnologias Utilizadas</h2>
