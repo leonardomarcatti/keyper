@@ -1,4 +1,4 @@
-<h1>🔐 Sistema de Administração de Chaves — CodeIgniter 4 + Docker</h1>
+<h1>🔐 Keyper - Sistema de Administração de Chaves</h1>
 <p>Aplicação web desenvolvida em CodeIgniter 4 com ambiente totalmente containerizado utilizando Docker Compose, criada para auxiliar no controle e administração de chaves de portas dentro de empresas, condomínios ou instituições.</p>
 <p>O sistema permite registrar usuários, empregados e chaves, além de acompanhar a movimentação das chaves através de relatórios completos.</p>
 
