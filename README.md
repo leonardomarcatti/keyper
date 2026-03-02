@@ -10,10 +10,11 @@
 ✅ Registro de qual usuário retirou determinada chave</br>
 ✅ Histórico de qual chave foi retirada por qual usuário</br>
 ✅ Relatórios gerenciais:</br>
-<p></p>
-Relatório de chaves
-<p>Relatório de empregados</p>
-<p>Histórico de movimentação de chaves</p>
+<ol>
+   <li>Relatório de chaves</li>
+   <li>Relatório de empregados</li>
+   <li>Histórico de movimentação de chaves</li>
+</ol>
 
 <h2>🧱 Tecnologias Utilizadas</h2>
 <ul>
