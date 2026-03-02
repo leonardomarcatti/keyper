@@ -29,5 +29,8 @@ composer install --no-interaction --prefer-dist --optimize-autoloader
 echo "🧱 Executando migrations..."
 php spark migrate --force
 
+echo "🧱 Executando sedders..."
+php spark db:seed StaffSeeder
+
 echo "🚀 Iniciando CodeIgniter 4..."
 php spark serve --host 0.0.0.0 --port 3000

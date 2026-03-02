@@ -24,7 +24,7 @@ class PagesController extends BaseController
          return view('mainPage');
       }
 
-      return \redirect()->route('home');
+      return \redirect()->route('login');
    }
 
    public function setup()
