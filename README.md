@@ -1,22 +1,19 @@
-<></>
 <h1>🔐 Sistema de Administração de Chaves — CodeIgniter 4 + Docker</h1>
 <p>Aplicação web desenvolvida em CodeIgniter 4 com ambiente totalmente containerizado utilizando Docker Compose, criada para auxiliar no controle e administração de chaves de portas dentro de empresas, condomínios ou instituições.</p>
 <p>O sistema permite registrar usuários, empregados e chaves, além de acompanhar a movimentação das chaves através de relatórios completos.</p>
 
 <h2>🚀 Funcionalidades</h2>
-✅ Cadastro de usuários do sistema
-✅ Cadastro de empregados
-✅ Cadastro de chaves
-✅ Controle de retirada e devolução de chaves
-✅ Registro de qual usuário retirou determinada chave
-✅ Histórico de qual chave foi retirada por qual usuário
-✅ Relatórios gerenciais:
-<></>
+✅ Cadastro de usuários do sistema</br>
+✅ Cadastro de empregados</br>
+✅ Cadastro de chaves</br>
+✅ Controle de retirada e devolução de chaves</br>
+✅ Registro de qual usuário retirou determinada chave</br>
+✅ Histórico de qual chave foi retirada por qual usuário</br>
+✅ Relatórios gerenciais:</br>
+<p></p>
 Relatório de chaves
-<></>
-Relatório de empregados
-<></>
-Histórico de movimentação de chaves
+<p>Relatório de empregados</p>
+<p>Histórico de movimentação de chaves</p>
 
 <h2>🧱 Tecnologias Utilizadas</h2>
 <ul>
@@ -30,7 +27,7 @@ Histórico de movimentação de chaves
 <h2>🐳 Ambiente Docker</h2>
 <p>A aplicação roda completamente via containers.</p>
 <h3>Portas utilizadas</h3>
-<b>|   Serviço	   | Porta  | Descrição        |</b>
+<p><b>|   Serviço	   | Porta  | Descrição        |</b></p>
 <p>Aplicação Web	|  3000	| Acesso ao sistema</p>
 <p>Banco de Dados |	3305	| MySQL/MariaDB</p>
 
@@ -74,7 +71,7 @@ Histórico de movimentação de chaves
 <p>API REST pública</p>
 <p>Auditoria avançada</p>
 <h2>👨‍💻 Autor</h2>
-<h2>Projeto desenvolvido para fins de organização administrativa e estudo prático utilizando CodeIgniter 4 e Docker.</h2>
+<p>Projeto desenvolvido para fins de organização administrativa e estudo prático utilizando CodeIgniter 4 e Docker.</p>
 <h2>📄 Licença</h2>
 <p>Este projeto está sob licença MIT.</p>
 <p>Sinta-se livre para usar e modificar.</p>
